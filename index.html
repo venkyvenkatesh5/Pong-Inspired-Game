@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pong-ish Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>More Like Squash</h1>
+  </header>
+
+  <main>
+    <canvas id="canvas" width="700" height="500"></canvas>
+    <div class="controls">
+      <button id="play_button" onclick="startGame()">Start Game</button>
+      <button id="restart_button" onclick="restartGame()" disabled>Restart</button>
+      <select id="level_select" onchange="setLevel()">
+        <option value="1">Beginner</option>
+        <option value="2">Intermediate</option>
+        <option value="3">Advanced</option>
+      </select>
+    </div>
+    
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
